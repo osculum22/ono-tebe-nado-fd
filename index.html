@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="stylesheet" href="C:\Users\Дмитрий\OneDrive\Desktop\dev\ono-tebe-nado-fd\fonts">
+    <link rel="stylesheet" href="C:\Users\Дмитрий\OneDrive\Desktop\dev\ono-tebe-nado-fd\fonts\fonts.css">
     <link rel="stylesheet" href="C:\Users\Дмитрий\OneDrive\Desktop\dev\ono-tebe-nado-fd\styles\global.css">
     <link rel="stylesheet" href="C:\Users\Дмитрий\OneDrive\Desktop\dev\ono-tebe-nado-fd\styles\style.css">
   </head>
@@ -52,32 +52,46 @@
           <span class="cover__text-item item-t">надо</span>
         </h1>
         <description class="description">
-          <p class="description__text">аукцион вещей, в которые никто не верил</p>
+          <p class="description__text">
+            <span>аукцион</span>
+            <span>вещей,</span>
+            <span>в</span>
+            <span>которые</span>
+            <span>никто</span>
+            <span>не</span>
+            <span>верил</span>
+          </p>
           <button class="description__button">сделать ставку</button>
         </description>
-      </section> 
-      <section> <!--вторая секция-->
-        <h2>лоты</h2>
-        <ul class="listlots">
-          <li>
-            <a>
-              <article></article>
-            </a>
-          </li>
-          <li>
-            <a>
-              <article></article>
-            </a>
-          </li>
-          <li>
-            <a>
-              <article></article>
-            </a>
-          </li>
-        </ul>
-        <a></a>
       </section>
-      <section>
+
+      <section class="lots space"> <!--вторая секция-->
+        <h2 class="lots__title">лоты</h2>
+        <a class="listlots card-first">
+          <overlay class="listlots__overlay"></overlay>
+          <article class="listlots__card card-first-a">
+            <h3 class="card-title title-f">фильм режиссера, который бросил киношколу</h3>
+            <p class="card-text text-f">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+          </article>
+        </a>
+        <a class="listlots card-second">
+          <overlay class="listlots__overlay"></overlay>
+          <article class="listlots__card card-second-b">
+            <h3 class="card-title title-s">Книга, где описан один скучный день из жизни рекламного агента</h3>
+            <p class="card-text text-s">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+          </article>
+        </a>
+        <a class="listlots card-third">
+          <overlay class="listlots__overlay"></overlay>
+          <article class="listlots__card card-third-c">
+            <h3 class="card-title title-t">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+            <p class="card-text text-t">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+          </article>
+        </a>
+        <a class="morelots">посмотреть больше</a>
+      </section>
+
+      <section class="about space"><!--третья секция-->
         <div class="conteiner">
           <a></a>
         </div>
@@ -88,7 +102,7 @@
             <p></p>
           </div>
         </div>
-      </section> <!--третья секция-->
+      </section> 
     </main>
     <footer>
       <address class="write"></address>
