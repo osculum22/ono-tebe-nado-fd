@@ -11,45 +11,43 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
+
+      <nav> <!--Здесь пошло меню шапки-->
         <ul class="header__menu">
-          <li class="header__menu-item">
-            <a href="#0" class="nav__link nav__active">главная</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="#0" class="nav__link">посмотреть лоты</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="#0" class="nav__link nav__spec">об аукционе</a>
-          </li>
+         <li>
+           <a href="#0" class="nav__link nav__active">главная</a>
+         </li>
+         <li>
+           <a href="#0" class="nav__link">посмотреть лоты</a>
+         </li>
+         <li>
+           <a href="#0" class="nav__link nav__spec">об аукционе</a>
+         </li>
         </ul>
       </nav>
-      <a class="header__logo" href="0">
+
+      <a class="header__logo" href="#0"> <!--Здесь пошел лого шапки-->
         <img src="C:\Users\Дмитрий\OneDrive\Desktop\dev\ono-tebe-nado-fd\images\logo-black.svg"
         class="header__logo-tip" 
         alt="Оно тебе надо - аукцион вещей в которые никто не верил">
       </a>
-      <address class="address">
-        <ul>
-          <li class="address__tel">
-            <a href="#0">+9 999 555 5555</a>
-          </li>
-          <li class="address__email">
-            <a href="#0">info@sobaka.ge</a>
-          </li>
-          <li class="address__city">
-            <a href="#0">наб. Принсенграхт 263- 265, Амстердам</a>
-          </li>
-        </ul>
+
+      <address class="address header__address"> <!--Здесь пошел адрес шапки-->
+        <a href="tel:+99995555555" class="address_link">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge" class="address_link">info@sobaka.ge</a>
+        <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
+
     </header>
-    <main class="main">
-      <section class="cover"> <!--первая секция-->
+    <main class="main"> <!--Гллавное содержимое-->
+
+<!--первая секция-->
+      <section class="cover"> 
         <overlay class="cover__overlay"></overlay>
         <h1 class="cover__text">
           <span class="cover__text-item item-f">оно</span>
           <span class="cover__text-item item-s">тебе</span>
-          <span class="cover__text-item item-t">надо</span>
+          <span class="cover__text-item item-t">над<span class="last-letter">о</span></span>
         </h1>
         <description class="description">
           <p class="description__text">
@@ -65,7 +63,8 @@
         </description>
       </section>
 
-      <section class="lots space"> <!--вторая секция-->
+ <!--вторая секция-->
+      <section class="lots space">
         <h2 class="lots__title">лоты</h2>
         <a class="listlots card-first">
           <overlay class="listlots__overlay"></overlay>
@@ -91,23 +90,67 @@
         <a class="morelots">посмотреть больше</a>
       </section>
 
-      <section class="about space"><!--третья секция-->
+<!--третья секция-->
+      <section class="about space">
         <div class="conteiner">
-          <a></a>
+            <a class="conteiner__logo">
+              <img src="../ono-tebe-nado-fd/images/logo-white.svg"
+              alt="Белый логотип на черном фоне проекта оно тебе надо - аукцион вещей, в которые никто не верил">
+            </a>
         </div>
-        <div class="conteiner">
-          <h2>об аукционе</h2>
-          <div class="text">
-            <p></p>
-            <p></p>
-          </div>
+        <div class="explain">
+          <h2 class="explain__title">об аукционе</h2>
+          <p class="explain__text-first position">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
+          <p class="explain__text-second"><span class="position">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря </span>
+<span class="perfect">на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми.</span></p>
         </div>
       </section> 
+
     </main>
-    <footer>
-      <address class="write"></address>
-      <nav class="write"></nav>
-      <ul></ul>
+
+    <footer class="footer"> <!--Место подвала-->
+
+      <address class="footer__address address"> <!--Контакты подвала-->
+        <a href="tel:+99995555555" class="address_link">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge" class="address_link">info@sobaka.ge</a>
+        <p>наб. Принсенграхт 263- 265, Амстердам</p>
+      </address>
+
+      <nav> <!--Меню подвала-->
+        <ul class="footer__menu">
+         <li>
+           <a href="#0" class="nav__link nav__active">главная</a>
+         </li>
+         <li>
+           <a href="#0" class="nav__link">посмотреть лоты</a>
+         </li>
+         <li>
+           <a href="#0" class="nav__link">об аукционе</a>
+         </li>
+        </ul>
+      </nav>
+
+      <ul class="footer__social-list">
+        <li class="footer__social-list-item">
+          <a href="#0" class="footer__social-link">
+            <img src="../ono-tebe-nado-fd/images/yt.svg"
+            class="footer__social-icon">
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a href="#0" class="footer__social-link">
+            <img src="../ono-tebe-nado-fd/images/vk.svg"
+            class="footer__social-icon">
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a href="#0" class="footer__social-link">
+            <img src="../ono-tebe-nado-fd/images/pinterest.svg"
+            class="footer__social-icon">
+          </a>
+        </li>
+      </ul> <!--Соцсети подвала--> 
+
     </footer>
   </body>
 </html>

@@ -11,29 +11,30 @@
 
 header {
   display: grid;
-  grid-template-columns: 1fr min-content 1fr;
+  grid-template-columns: 1fr 148px 1fr;
   align-items: center;
   width: 100%;
-  height: 293px;
+  height: 295px;
+  padding: 0 50px;
   opacity: 1;
 }
 
 .header__menu {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  justify-items: end;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
   gap: 32px;
-  list-style: none;
+  padding-left: 0;
+  list-style: circle;
+}
+
+.header__menu li:first-child {
+  list-style: none; /*Тут я убрал маркер (подсмотрел в инете)*/
 }
 
 .nav__spec {
   justify-self: start;
   padding-right: 38px;
-}
-
-.header__menu-item {
-  display: contents;
 }
 
 .nav__link {
@@ -45,19 +46,45 @@ header {
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
-  letter-spacing: 0%;
-  text-decoration: none;
+  text-decoration: underline solid 1px;
+  text-underline-offset: 4px;
 }
 
 .nav__active {
-  padding-left: 50px;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .header__logo {
+  display: block;
+  padding: 89px 5px 87px 7px;
+}
+
+.address {
   display: flex;
-  width: 148px;
-  height: 105px;
-  margin-left: 36,52px;
+  flex-direction: column;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: Regular;
+  line-height: 24.3px;
+  letter-spacing: 0%;
+  leading-trim: NONE;
+}
+
+.header__address {
+  justify-self: end;
+  max-width: 240px;
+  max-height: 98px;
+}
+
+.address_link {
+  text-decoration: underline solid 1px;
+  text-underline-offset: 4px;
 }
 
 .cover {
@@ -113,21 +140,26 @@ header {
   justify-items: start;
   grid-column: 1/2;
   grid-row: 1/2;
-  letter-spacing: 35px;
+  letter-spacing: 30px;
 }
 
 .item-s {
   grid-column: 2/3;
   grid-row: 2/3;
-  letter-spacing: 27px;
+  padding-left: 14px;
+  letter-spacing: 30px;
 }
 
 .item-t {
   grid-column: 3/3;
   grid-column: 1 / span 4;
   grid-row: 3/3;
-  margin-right: -30px;
-  letter-spacing: 28px;
+  padding-left: 0px;
+  letter-spacing: 30px;
+}
+
+.last-letter {
+  letter-spacing: 0;
 }
 
 .description {
@@ -199,6 +231,7 @@ header {
 .lots__title {
   grid-area: lots__title;
   padding-left: 40px;
+  padding-top: 5px;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 40px;
@@ -210,19 +243,19 @@ header {
 
 .listlots {
   position: relative;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
   z-index: 2;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .listlots__card {
   position: relative;
+  z-index: 2;
   width: 100%;
   height: 100%;
   opacity: 1;
   overflow: hidden;
-  z-index: 2;
 }
 
 .card-first {
@@ -266,7 +299,10 @@ header {
 }
 
 .morelots {
+  display: grid;
   grid-area: morelots;
+  align-items: end;
+  padding-left: 40px;
   font-family: 'Raleway';
   font-weight: 400;
   font-size: 20px;
@@ -275,39 +311,35 @@ header {
   letter-spacing: 0%;
   text-decoration: underline;
   text-underline-offset: 5px;
-  display: grid;
-  align-items: end;
-  padding-left: 40px;
 }
 
 .card-title {
-display: block;
-width: 254px;
-height: 110px;
-font-family: Raleway;
-font-weight: 700;
-font-style: Bold;
-font-size: 22px;
-line-height: 120%;
-letter-spacing: 0%;
-text-transform: uppercase;
-text-decoration: underline;
-text-decoration-style: solid;
-text-underline-offset: 2.8px;
-text-decoration-thickness: 0%;
-color: #fff;
-
+  display: block;
+  width: 254px;
+  height: 110px;
+  color: #fff;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 22px;
+  font-style: Bold;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+  text-underline-offset: 2.8px;
+  text-transform: uppercase;
 }
 
 .card-text {
-font-family: Raleway;
-font-weight: 400;
-font-style: Regular;
-font-size: 20px;
-leading-trim: NONE;
-line-height: 120%;
-letter-spacing: 0%;
-color: #fff;
+  color: #fff;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: Regular;
+  line-height: 120%;
+  letter-spacing: 0%;
+  leading-trim: NONE;
 }
 
 .title-f {
@@ -316,7 +348,7 @@ color: #fff;
   margin: 48px 40px 137px 40px;
 }
 .text-f {
-  margin: 137px 40px 48px 40px;
+  margin: 134px 40px 48px 40px;
 }
 
 .title-s {
@@ -331,4 +363,133 @@ color: #fff;
 }
 .text-t {
   margin: 63px 40px 48px 40px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+  "logo about-title"
+  ". text-first"
+  ". text-second";
+  column-gap: 24px;
+  padding-top: 120px;
+  padding-bottom: 180px;
+}
+
+.conteiner {
+  display: flex;
+  grid-area: logo;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  margin: 35px 47px 0;
+  border-radius: 100%;
+  background-color: #000000;
+}
+
+.conteiner__logo {
+  z-index: 2;
+  width: 148px;
+  height: 114px;
+  opacity: 1;
+}
+
+.explain {
+  display: contents;
+}
+
+.explain__title {
+  grid-area: about-title;
+  width: 100%;
+  height: 259px;
+  margin: 0;
+  padding: 140px 402px 78px 0px;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 40px;
+  font-style: Bold;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.explain__text-first {
+  grid-area: text-first;
+  width: 693px;
+  margin: 0;
+  padding-right: 10px;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: Regular;
+  line-height: 24px;
+  leading-trim: NONE;
+}
+
+.explain__text-second {
+  display: block;
+  grid-area: text-second;
+  width: 693px;
+  margin-top: 24px;
+  padding-right: 0px;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: Regular;
+  line-height: 24px;
+  leading-trim: NONE;
+}
+
+.perfect {
+  display: block;
+}
+
+.position {
+  margin-top: 7px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: start;
+  height: 180px;
+  margin-top: 4px;
+}
+
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 50px;
+}
+
+.footer > nav {
+  justify-self: center; 
+  align-self: start;
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 22px;
+  list-style: none;
+}
+
+.footer__social-list {
+  display: flex;
+  flex-direction: row;
+  justify-self: end;
+  padding-right: 50px;
+  gap: 48px;
+  list-style: none;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
 }
