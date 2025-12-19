@@ -73,7 +73,6 @@ header {
   font-style: Regular;
   line-height: 24.3px;
   letter-spacing: 0%;
-  leading-trim: NONE;
 }
 
 .header__address {
@@ -132,7 +131,6 @@ header {
   letter-spacing: 30%;
   text-align: right;
   text-transform: uppercase;
-  leading-trim: NONE;
 }
 
 .item-f {
@@ -230,8 +228,8 @@ header {
 
 .lots__title {
   grid-area: lots__title;
-  padding-left: 40px;
   padding-top: 5px;
+  padding-left: 40px;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 40px;
@@ -339,7 +337,6 @@ header {
   font-style: Regular;
   line-height: 120%;
   letter-spacing: 0%;
-  leading-trim: NONE;
 }
 
 .title-f {
@@ -426,7 +423,6 @@ header {
   font-size: 20px;
   font-style: Regular;
   line-height: 24px;
-  leading-trim: NONE;
 }
 
 .explain__text-second {
@@ -440,7 +436,6 @@ header {
   font-size: 20px;
   font-style: Regular;
   line-height: 24px;
-  leading-trim: NONE;
 }
 
 .perfect {
@@ -484,8 +479,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-self: end;
-  padding-right: 50px;
   gap: 48px;
+  padding-right: 50px;
   list-style: none;
 }
 
