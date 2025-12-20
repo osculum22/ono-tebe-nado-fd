@@ -29,7 +29,7 @@ header {
 }
 
 .header__menu li:first-child {
-  list-style: none; /*Тут я убрал маркер (подсмотрел в инете)*/
+  list-style: none; /*Тут я убрал маркер*/
 }
 
 .nav__spec {
@@ -461,8 +461,7 @@ header {
   padding-left: 50px;
 }
 
-.footer > 
-nav {
+.footer__nav {
   justify-self: center; 
   align-self: start;
 }
