@@ -1,0 +1,1 @@
+git@github.com:osculum22/ono-tebe-nado-fd.git
