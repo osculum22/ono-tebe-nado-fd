@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="stylesheet" href="C:\Users\Дмитрий\OneDrive\Desktop\dev\ono-tebe-nado-fd\fonts\fonts.css"> 
-    <link rel="stylesheet" href="C:\Users\Дмитрий\OneDrive\Desktop\dev\ono-tebe-nado-fd\styles\global.css">
-    <link rel="stylesheet" href="C:\Users\Дмитрий\OneDrive\Desktop\dev\ono-tebe-nado-fd\styles\style.css">
+    <link rel="stylesheet" href="../ono-tebe-nado-fd/fonts/fonts.css"> 
+    <link rel="stylesheet" href="../ono-tebe-nado-fd/styles/global.css">
+    <link rel="stylesheet" href="../ono-tebe-nado-fd/styles/style.css">
   </head>
   <body>
     <header class="header">
@@ -27,7 +27,7 @@
       </nav>
 
       <a class="header__logo" href="#0"> <!--Здесь пошел лого шапки-->
-        <img src="C:\Users\Дмитрий\OneDrive\Desktop\dev\ono-tebe-nado-fd\images\logo-black.svg"
+        <img src="../ono-tebe-nado-fd/images/logo-black.svg"
         class="header__logo-tip" 
         alt="Оно тебе надо - аукцион вещей в которые никто не верил">
       </a>
@@ -43,13 +43,13 @@
 
 <!--первая секция-->
       <section class="cover"> 
-        <overlay class="cover__overlay"></overlay>
+        <div class="cover__overlay"></div>
         <h1 class="cover__text">
           <span class="cover__text-item item-f">оно</span>
           <span class="cover__text-item item-s">тебе</span>
           <span class="cover__text-item item-t">над<span class="last-letter">о</span></span>
         </h1>
-        <description class="description">
+        <div class="description">
           <p class="description__text">
             <span>аукцион</span>
             <span>вещей,</span>
@@ -60,28 +60,28 @@
             <span>верил</span>
           </p>
           <button class="description__button">сделать ставку</button>
-        </description>
+        </div>
       </section>
 
  <!--вторая секция-->
       <section class="lots space">
         <h2 class="lots__title">лоты</h2>
         <a class="listlots card-first">
-          <overlay class="listlots__overlay"></overlay>
+          <div class="listlots__overlay"></div>
           <article class="listlots__card card-first-a">
             <h3 class="card-title title-f">фильм режиссера, который бросил киношколу</h3>
             <p class="card-text text-f">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
           </article>
         </a>
         <a class="listlots card-second">
-          <overlay class="listlots__overlay"></overlay>
+          <div class="listlots__overlay"></div>
           <article class="listlots__card card-second-b">
             <h3 class="card-title title-s">Книга, где описан один скучный день из жизни рекламного агента</h3>
             <p class="card-text text-s">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
           </article>
         </a>
         <a class="listlots card-third">
-          <overlay class="listlots__overlay"></overlay>
+          <div class="listlots__overlay"></div>
           <article class="listlots__card card-third-c">
             <h3 class="card-title title-t">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
             <p class="card-text text-t">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
@@ -134,18 +134,21 @@
         <li class="footer__social-list-item">
           <a href="#0" class="footer__social-link">
             <img src="../ono-tebe-nado-fd/images/yt.svg"
+            alt=""
             class="footer__social-icon">
           </a>
         </li>
         <li class="footer__social-list-item">
           <a href="#0" class="footer__social-link">
             <img src="../ono-tebe-nado-fd/images/vk.svg"
+            alt=""
             class="footer__social-icon">
           </a>
         </li>
         <li class="footer__social-list-item">
           <a href="#0" class="footer__social-link">
             <img src="../ono-tebe-nado-fd/images/pinterest.svg"
+            alt=""
             class="footer__social-icon">
           </a>
         </li>
