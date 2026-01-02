@@ -18,7 +18,7 @@
            <a href="#0" class="nav__link nav__active">главная</a>
          </li>
          <li>
-           <a href="#0" class="nav__link">посмотреть лоты</a>
+           <a href="#0" class="nav__link nav__spec">посмотреть лоты</a>
          </li>
          <li>
            <a href="#0" class="nav__link nav__spec">об аукционе</a>
@@ -43,7 +43,7 @@
 
 <!--первая секция-->
       <section class="cover"> 
-        <div class="cover__overlay"></div>
+        <div class="overlay"></div>
         <h1 class="cover__text">
           <span class="cover__text-item item-f">оно</span>
           <span class="cover__text-item item-s">тебе</span>
@@ -51,47 +51,51 @@
         </h1>
         <div class="description">
           <p class="description__text">
-            <span>аукцион</span>
-            <span>вещей,</span>
-            <span>в</span>
-            <span>которые</span>
-            <span>никто</span>
-            <span>не</span>
-            <span>верил</span>
+            аукцион вещей, в которые никто не верил
           </p>
-          <button class="description__button">сделать ставку</button>
+          <button class="description__button" type="button">
+            сделать ставку
+          </button>
         </div>
       </section>
 
  <!--вторая секция-->
-      <section class="lots space">
+      <section>
         <h2 class="lots__title">лоты</h2>
-        <a class="listlots card-first">
-          <div class="listlots__overlay"></div>
-          <article class="listlots__card card-first-a">
-            <h3 class="card-title title-f">фильм режиссера, который бросил киношколу</h3>
-            <p class="card-text text-f">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
-          </article>
-        </a>
-        <a class="listlots card-second">
-          <div class="listlots__overlay"></div>
-          <article class="listlots__card card-second-b">
-            <h3 class="card-title title-s">Книга, где описан один скучный день из жизни рекламного агента</h3>
-            <p class="card-text text-s">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
-          </article>
-        </a>
-        <a class="listlots card-third">
-          <div class="listlots__overlay"></div>
-          <article class="listlots__card card-third-c">
-            <h3 class="card-title title-t">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
-            <p class="card-text text-t">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
-          </article>
-        </a>
+        <div class="lots">
+          <a class="listlots">
+            <article class="card">
+              <img src="./images/card-lot-01.jpg" alt="Фильм режиссера, который бросил киношколу"
+              class="background">
+              <div class="overlay"></div>
+              <h3 class="card-title">фильм режиссера, который бросил киношколу</h3>
+              <p class="card-text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+            </article>
+          </a>
+          <a class="listlots">
+            <article class="card">
+              <img src="./images/card-lot-02.jpg" alt="Книга, где описан один скучный день из жизни рекламного агента"
+              class="background">
+              <div class="overlay"></div>
+              <h3 class="card-title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+              <p class="card-text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+            </article>
+          </a>
+          <a class="listlots">
+            <article class="card">
+              <img src="./images/card-lot-03.jpg" alt="Картина, которую повторит даже 5-летний сын маминой подруги"
+              class="background">
+              <div class="overlay"></div>
+              <h3 class="card-title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+              <p class="card-text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+            </article>
+           </a>
+        </div>
         <a class="morelots">посмотреть больше</a>
       </section>
 
 <!--третья секция-->
-      <section class="about space">
+      <section class="about">
         <div class="conteiner">
             <a class="conteiner__logo">
               <img src="./images/logo-white.svg"
@@ -100,9 +104,10 @@
         </div>
         <div class="explain">
           <h2 class="explain__title">об аукционе</h2>
-          <p class="explain__text-first position">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
-          <p class="explain__text-second"><span class="position">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря </span>
-<span class="perfect">на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми.</span></p>
+            <div class="about-project">
+              <p class="explain__text">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
+              <p class="explain__text">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми.</p>
+            </div>
         </div>
       </section> 
 
@@ -132,23 +137,23 @@
 
       <ul class="footer__social-list"><!--Соцсети подвала--> 
         <li class="footer__social-list-item">
-          <a href="#0" class="footer__social-link">
+          <a href="#0" class="footer__social-link" target="_blank">
             <img src="./images/yt.svg"
-            alt=""
+            alt="иконка страницы ютуб проекта оно тебе надо"
             class="footer__social-icon">
           </a>
         </li>
         <li class="footer__social-list-item">
-          <a href="#0" class="footer__social-link">
+          <a href="#0" class="footer__social-link" target="_blank">
             <img src="./images/vk.svg"
-            alt=""
+            alt="иконка страницы вконтакте проекта оно тебе надо"
             class="footer__social-icon">
           </a>
         </li>
         <li class="footer__social-list-item">
-          <a href="#0" class="footer__social-link">
+          <a href="#0" class="footer__social-link" target="_blank">
             <img src="./images/pinterest.svg"
-            alt=""
+            alt="иконка пинтерест проекта оно тебе надо"
             class="footer__social-icon">
           </a>
         </li>
