@@ -52,10 +52,6 @@ a {
   list-style: none; /*Тут я убрал маркер*/
 }
 
-.nav__spec {
-  justify-self: start;
-}
-
 .nav__link {
   position: relative;
   display: inline-flex;
@@ -217,7 +213,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   gap: 25px;
   max-width: 100%;
   height: auto;
@@ -240,8 +236,6 @@ a {
   flex: 0 0 calc(33.333% - 17px);
   box-sizing: border-box;
   width: 100%;
-  height: 100%;
-  min-height: 596px;
   text-decoration: none;
 }
 
@@ -249,23 +243,36 @@ a {
   display: grid;
   align-content: space-between;
   width: 334px;
-  height: 596px;
+  min-height: 596px;
+  height: auto;
 }
 
-.background {
-  position: absolute;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.film,
+.book,
+.picture {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.film {
+  background-image: url('../images/card-lot-01.jpg');
+}
+
+.book {
+  background-image: url('../images/card-lot-02.jpg');
+}
+
+.picture {
+  background-image: url('../images/card-lot-03.jpg');
 }
 
 .card-title {
   position: relative;
   z-index: 2;
   display: block;
-  max-width: 254px;
   width: 100%;
+  max-width: 254px;
   margin: 48px 40px 0;
   color: #fff;
   font-family: 'Raleway', sans-serif;
@@ -318,8 +325,8 @@ a {
   grid-area: logo;
   justify-content: center;
   align-items: center;
-  max-width: 240px;
   width: 100%;
+  max-width: 240px;
   height: 240px;
   margin: 35px 47px 0;
   border-radius: 100%;
@@ -352,11 +359,11 @@ a {
 .explain__text {
   display: block;
   width: 693px;
+  padding-right: 5.01px;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  padding-right: 5.01px;
 }
 
 .about-project {
